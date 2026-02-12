@@ -1,0 +1,41 @@
+# Movie-info-card
+<head>
+<body>
+
+<h2 id="msg">My favorite movies</h2>
+
+<button onclick="changeText('sahoo')">Sahoo</button>
+<br><br>
+
+<button onclick="changeText('premalu')">Premalu</button>
+<br><br>
+
+<button onclick="changeText('fida')">Fida</button>
+
+<p id="clicked"></p>
+
+<script>
+function changeText(movie) {
+    let message = "";
+
+    if (movie === "sahoo") {
+        message = "Prabhas, Shraddha Kapoor";
+    } 
+    else if (movie === "premalu") {
+        message = "Naslen K. Gafoor";
+    } 
+    else if (movie === "fida") {
+        message = "Varun Tej";
+    }
+
+    document.getElementById("msg").innerHTML = message;
+    document.getElementById("clicked").innerHTML = "You clicked: " + movie;
+}
+</script>
+
+</body>
+<style>
+body{
+    background-color: Blue;
+    </style>
+</html>
